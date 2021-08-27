@@ -1,2 +1,2 @@
-# HealthPlugin-POC-iOS
+# HealthPluginiOS
 POC for HealthPlugin iOS
