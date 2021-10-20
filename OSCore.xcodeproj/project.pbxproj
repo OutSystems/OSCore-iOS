@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D49B6F9F2720619600E0C354 /* OSCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D49B6F9E2720619600E0C354 /* OSCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D49B6FA6272061D600E0C354 /* PlatformInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B6FA5272061D600E0C354 /* PlatformInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D49B6F9B2720619600E0C354 /* OSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49B6F9E2720619600E0C354 /* OSCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCore.h; sourceTree = "<group>"; };
+		D49B6FA5272061D600E0C354 /* PlatformInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				D49B6F9E2720619600E0C354 /* OSCore.h */,
+				D49B6FA5272061D600E0C354 /* PlatformInterface.swift */,
 			);
 			path = OSCore;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					D49B6F9A2720619600E0C354 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49B6FA6272061D600E0C354 /* PlatformInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,8 @@
 		D49B6FA32720619600E0C354 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -280,6 +287,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +296,8 @@
 		D49B6FA42720619600E0C354 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
