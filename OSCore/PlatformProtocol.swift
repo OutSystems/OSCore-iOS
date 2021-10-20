@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol PlatformInterface {
+public protocol PlatformProtocol {
     
     func sendResult(result: String?, error: NSError?, callBackID:String)
     

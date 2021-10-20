@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D49B6F9F2720619600E0C354 /* OSCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D49B6F9E2720619600E0C354 /* OSCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D49B6FA6272061D600E0C354 /* PlatformInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B6FA5272061D600E0C354 /* PlatformInterface.swift */; };
+		D49B6FA6272061D600E0C354 /* PlatformProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B6FA5272061D600E0C354 /* PlatformProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D49B6F9B2720619600E0C354 /* OSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49B6F9E2720619600E0C354 /* OSCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCore.h; sourceTree = "<group>"; };
-		D49B6FA5272061D600E0C354 /* PlatformInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformInterface.swift; sourceTree = "<group>"; };
+		D49B6FA5272061D600E0C354 /* PlatformProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				D49B6F9E2720619600E0C354 /* OSCore.h */,
-				D49B6FA5272061D600E0C354 /* PlatformInterface.swift */,
+				D49B6FA5272061D600E0C354 /* PlatformProtocol.swift */,
 			);
 			path = OSCore;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49B6FA6272061D600E0C354 /* PlatformInterface.swift in Sources */,
+				D49B6FA6272061D600E0C354 /* PlatformProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
