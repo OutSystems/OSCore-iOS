@@ -42,6 +42,5 @@ steps:
     feedsToUsePublish: 'internal'
     vstsFeedPublish: 'd8b4d1eb-aeb3-4b5b-9b43-37b4fc985e2f'
     vstsFeedPackage: 'OSCore-iOS'
-    versionOption: 'patch'
+    vstsPackageVersion: '0.0.1'
     verbosity: 'Trace'
-        
