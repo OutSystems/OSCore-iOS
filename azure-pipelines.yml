@@ -17,15 +17,4 @@ steps:
     scheme: 'OSCore'
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
-    xcodeVersion: 'default' # Options: 8, 9, 10, 11, 12, default, specifyPath
-    packageApp: true
-    destinationTypeOption: 'devices'
-    destinationDevices: 'generic'
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your commands here
-      
-      echo 'Hello world'
+    xcodeVersion: 'default'
