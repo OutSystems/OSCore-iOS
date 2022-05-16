@@ -17,7 +17,7 @@ steps:
     sdk: 'iphoneos'
     scheme: 'OSCore'
     xcodeVersion: '12'
-    packageApp: true
+    packageApp: false
     destinationPlatformOption: 'iOS'
     args: '-archivePath $(system.defaultworkingdirectory)/archive/%(SDK)  SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
 
