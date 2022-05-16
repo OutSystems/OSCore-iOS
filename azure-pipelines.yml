@@ -17,7 +17,7 @@ steps:
     xcodeVersion: '12'
     packageApp: false
     destinationPlatformOption: 'iOS'
-    archivePath: '$(Build.ArtifactStagingDirectory)/OSCore.framework-iphoneos.xcarchive'
+    #archivePath: '$(Build.ArtifactStagingDirectory)/OSCore.framework-iphoneos.xcarchive'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
