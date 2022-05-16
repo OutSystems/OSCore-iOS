@@ -19,7 +19,7 @@ steps:
     xcodeVersion: '12'
     packageApp: false
     destinationPlatformOption: 'iOS'
-    args: '-archivePath $(system.defaultworkingdirectory)/archive/%(SDK)  SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
+    args: '-archivePath $(system.defaultworkingdirectory)/archive/OSCore.framework-iphoneos.xcarchive  SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
 
 - task: PublishBuildArtifacts@1
   inputs:
