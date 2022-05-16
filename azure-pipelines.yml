@@ -33,6 +33,6 @@ steps:
     xcodeVersion: 'default'
     packageApp: false
     destinationTypeOption: 'simulators'
-    destinationDevices: 'generic'
+    destinationSimulators: 'generic'
     destinationPlatformOption: 'custom'
     destinationPlatform: 'iOS'
