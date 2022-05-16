@@ -12,13 +12,12 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'archive'
+    actions: 'build archive'
     configuration: 'release'
     sdk: 'iphoneos'
     scheme: 'OSCore'
     xcodeVersion: '12'
     packageApp: true
-    destinationTypeOption: 'devices'
     destinationPlatformOption: 'iOS'
     args: 'SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
     archivePath: '$(system.defaultworkingdirectory)/archive'
