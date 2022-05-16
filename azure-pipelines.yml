@@ -35,3 +35,11 @@ steps:
     PathtoPublish: '$(system.defaultworkingdirectory)/archive'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+- task: UniversalPackages@0
+  inputs:
+    command: 'publish'
+    publishDirectory: '$(system.defaultworkingdirectory)/archive/OSCore.xcframework'
+    feedsToUsePublish: 'internal'
+    vstsFeedPublish: 'd8b4d1eb-aeb3-4b5b-9b43-37b4fc985e2f'
+    versionOption: 'patch'
+    verbosity: 'Trace'
