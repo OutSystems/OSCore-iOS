@@ -19,7 +19,7 @@ steps:
     xcodeVersion: '12'
     packageApp: false
     destinationTypeOption: 'devices'
-    args: '-destination ''platform=iOS'' -archivePath $(system.defaultworkingdirectory)/archive/OSCore.framework-iphoneos.xcarchive  SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
+    args: '-destination platform=iOS -archivePath $(system.defaultworkingdirectory)/archive/OSCore.framework-iphoneos.xcarchive  SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
 - task: Xcode@5
   inputs:
     actions: 'archive'
@@ -28,7 +28,7 @@ steps:
     scheme: 'OSCore'
     xcodeVersion: '12'
     packageApp: false
-    args: '-destination ''platform=iOS Simulator'' -archivePath $(system.defaultworkingdirectory)/archive/OSCore.framework-iphonesimulator.xcarchive  SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
+    args: '-destination platform=iOS Simulator -archivePath $(system.defaultworkingdirectory)/archive/OSCore.framework-iphonesimulator.xcarchive  SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(system.defaultworkingdirectory)/archive'
