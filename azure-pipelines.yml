@@ -13,4 +13,4 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'xcodebuild archive -scheme OSCore -configuration Release -workspace /Users/runner/work/1/s/OSCore.xcodeproj/project.xcworkspace -destination ''generic/platform=iOS'' -archivePath ''/Users/runner/work/1/s/build/OSHealthFitnessLib.framework-iphoneos.xcarchive'' SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
+    script: 'xcodebuild archive -scheme OSCore -configuration Release -workspace /Users/runner/work/1/s/OSCore.xcodeproj/project.xcworkspace -destination ''generic/platform=iOS'' -archivePath ''/Users/runner/work/1/s/build/OSCoreLib.framework-iphoneos.xcarchive'' SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
