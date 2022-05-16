@@ -12,12 +12,13 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'archive'
+    actions: 'build archive'
     configuration: 'release'
     sdk: 'iphoneos'
     scheme: 'OSCore'
     xcodeVersion: '12'
     packageApp: false
+    destinationTypeOption: 'devices'
     destinationPlatformOption: 'iOS'
     args: 'SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
     archivePath: 'output/$(SDK)/$(Configuration)'
@@ -29,4 +30,4 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'xcodebuild -create-xcframework -framework ''./build/OSCore.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/OSCore.framework'' -framework ''./build/OSCore.framework-iphoneos.xcarchive/Products/Library/Frameworks/OSCore.framework'' -output ''./build/OSCore.xcframework'''
+    script: 'ls'
