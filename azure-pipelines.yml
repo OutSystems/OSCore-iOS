@@ -13,6 +13,7 @@ steps:
 - task: Xcode@5
   inputs:
     actions: 'archive'
+    sdk: 'iphoneos'
     xcodeVersion: '12'
     packageApp: false
     destinationPlatformOption: 'iOS'
