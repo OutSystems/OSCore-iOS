@@ -18,5 +18,5 @@ steps:
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default'
     packageApp: false
-    destinationPlatformOption: 'iOS'
-    destinationPlatform: 'generic'
+    destinationPlatformOption: 'Custom'
+    destinationPlatform: 'generic/platform=iOS'
