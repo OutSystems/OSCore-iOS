@@ -17,6 +17,12 @@ steps:
     xcodeVersion: '12'
     packageApp: false
     destinationPlatformOption: 'iOS'
+    archivePath: '$(Build.ArtifactStagingDirectory)/OSCore.framework-iphoneos.xcarchive'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 - task: Xcode@5
   inputs:
     actions: 'archive'
@@ -24,6 +30,7 @@ steps:
     xcodeVersion: '12'
     packageApp: false
     destinationPlatformOption: 'iOS'
+    archivePath: '$(Build.ArtifactStagingDirectory)/OSCore.framework-iphonesimulator.xcarchive'
 - task: Bash@3
   inputs:
     targetType: 'inline'
