@@ -20,9 +20,7 @@ steps:
     xcodeVersion: 'default'
     packageApp: false
     destinationTypeOption: 'devices'
-    destinationDevices: 'generic'
-    destinationPlatformOption: 'custom'
-    destinationPlatform: 'iOS'
+    destinationPlatformOption: 'iOS'
 - task: Xcode@5
   inputs:
     actions: 'archive'
@@ -33,6 +31,4 @@ steps:
     xcodeVersion: 'default'
     packageApp: false
     destinationTypeOption: 'simulators'
-    destinationSimulators: 'generic'
-    destinationPlatformOption: 'custom'
-    destinationPlatform: 'iOS'
+    destinationPlatformOption: 'iOS'
