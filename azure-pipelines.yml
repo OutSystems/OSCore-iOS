@@ -17,11 +17,11 @@ steps:
     sdk: 'iphoneos'
     scheme: 'OSCore'
     xcodeVersion: '12'
-    packageApp: false
+    packageApp: true
     destinationTypeOption: 'devices'
     destinationPlatformOption: 'iOS'
     args: 'SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
-    archivePath: 'output/$(SDK)/$(Configuration)'
+    archivePath: '$(system.defaultworkingdirectory)/archive'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
