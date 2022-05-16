@@ -13,11 +13,10 @@ steps:
 - task: Xcode@5
   inputs:
     actions: 'archive'
-    sdk: 'iphoneos'
     scheme: 'OSCore'
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default'
     packageApp: false
-    destinationTypeOption: 'devices'
-    destinationDevices: 'generic'
+    destinationPlatformOption: 'iOS'
+    destinationPlatform: 'generic'
