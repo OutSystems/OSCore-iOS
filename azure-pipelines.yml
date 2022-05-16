@@ -12,9 +12,8 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'build'
-    scheme: ''
-    sdk: 'iphoneos'
+    actions: 'archive'
+    scheme: 'OSCoreLib'
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, 10, 11, 12, default, specifyPath
