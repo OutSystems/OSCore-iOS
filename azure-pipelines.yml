@@ -17,3 +17,14 @@ steps:
     xcodeVersion: '12'
     packageApp: false
     destinationPlatformOption: 'iOS'
+- task: Xcode@5
+  inputs:
+    actions: 'archive'
+    sdk: 'iphonesimulator'
+    xcodeVersion: '12'
+    packageApp: false
+    destinationPlatformOption: 'iOS'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'xcodebuild -create-xcframework -framework ''./build/OSCore.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/OSCore.framework'' -framework ''./build/OSCore.framework-iphoneos.xcarchive/Products/Library/Frameworks/OSCore.framework'' -output ''./build/OSCore.xcframework'''
