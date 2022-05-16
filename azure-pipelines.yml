@@ -38,4 +38,4 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'xcodebuild -create-xcframework -framework ''$(system.defaultworkingdirectory)/archive/OSCore.framework-iphonesimulator.xcarchive'' -framework ''$(system.defaultworkingdirectory)/archive/OSCore.framework-iphoneos.xcarchive'' -output ''$(system.defaultworkingdirectory)/archive/OSCore.xcframework'''
+    script: 'xcodebuild -create-xcframework -framework ''$(system.defaultworkingdirectory)/archive/OSCore.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/OSHealthFitnessLib.framework'' -framework ''$(system.defaultworkingdirectory)/archive/OSCore.framework-iphoneos.xcarchive/Products/Library/Frameworks/OSHealthFitnessLib.framework'' -output ''$(system.defaultworkingdirectory)/archive/OSCore.xcframework'''
