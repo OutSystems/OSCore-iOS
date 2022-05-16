@@ -28,7 +28,8 @@ steps:
     scheme: 'OSCore'
     xcodeVersion: '12'
     packageApp: false
-    destinationPlatformOption: 'iOS'
+    destinationPlatformOption: 'custom'
+    destinationPlatform: ' OS Simulator'
     args: '-archivePath $(system.defaultworkingdirectory)/archive/OSCore.framework-iphonesimulator.xcarchive  SKIP_INSTALL=NO BUILD_LIBRARIES_FOR_DISTRIBUTION=YES'
 - task: PublishBuildArtifacts@1
   inputs:
