@@ -16,8 +16,9 @@
 This repository contains a protocol that interfaces business logic with iOS platform.
 
 Developers are able to create their own integrations of `PlatformProtocol` for their target mobile framework.
-
-![Dependencies](/assets/dependencies.png Dependencies)
+<div align="center">
+    <img src="/assets/dependencies.png">
+</div>
 
 This structure allows us to develop native plugins, portable between techonological stacks (ie: Cordova, React-native, Flutter...)
 
