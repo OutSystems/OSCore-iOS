@@ -24,7 +24,7 @@ This structure allows us to develop native plugins, portable between techonologi
  
 ## Usage
 
-1. Include the appropriated pod in your project.
+1. Include the `POD_NAME` pod in your project.
 
 2. Create an extension that implements `PlatformProtocol`.
 ```swift
