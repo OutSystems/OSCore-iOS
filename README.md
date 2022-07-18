@@ -15,9 +15,9 @@
 
 This repository contains a protocol that interfaces business logic with iOS platform.
 
-Developers are able to create their own integrations by providing an implementation for `PlatformProtocol`.
+Developers are able to create their own integrations of `PlatformProtocol` for their target mobile framework.
 
-
+This structure allows us to develop native plugins, portable between techonological stacks (ie: Cordova, React-native, Flutter...)
 
 ## Supported Platforms
 - iOS
@@ -26,7 +26,7 @@ Developers are able to create their own integrations by providing an implementat
 
 1. Include the appropriated pod in your project.
 
-2. Create an extension that implements `PlatformProtocol`
+2. Create an extension that implements `PlatformProtocol`.
 ```swift
 extension CordovaInterface: PlatformProtocol {
     func sendResult(result: String?, error: NSError?, callBackID: String) {
@@ -40,3 +40,7 @@ extension CordovaInterface: PlatformProtocol {
 ```
 
 ## Methods
+
+- `sendResult(result: String?, error: NSError?, callBackID: String)` will send messages back to the mobile framework.
+
+- `trigger(event: String, data: String)` will trigger an event on the mobile framework's webview.
