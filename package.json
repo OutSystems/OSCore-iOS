@@ -1,0 +1,16 @@
+{
+  "name": "com.outsystems.plugins.common",
+  "version": "1.0.0",
+  "description": "trololo",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "cordova": {
+    "id": "com.outsystems.plugins.common",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "engines": []
+}

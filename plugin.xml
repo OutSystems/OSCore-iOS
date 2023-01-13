@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugin id="com.outsystems.plugins.common" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>OSCore</name>
+  <description>Swift protocol for stack agnostic plugin implementation.</description>
+  <author>OutSystems Inc</author>
+  <!--js-module name="OSCore" src="www/OSCore.js">
+    <clobbers target="cordova.plugins.OSCore"/>
+  </js-module-->
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="OSCore">
+        <param name="ios-package" value="OSCore"/>
+      </feature>
+    </config-file>
+    <framework src="src/ios/OSCore.xcframework" embed="true" custom="true" />
+  </platform>
+</plugin>
